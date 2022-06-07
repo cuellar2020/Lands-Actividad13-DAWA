@@ -1,0 +1,85 @@
+<div class="container-fluid">
+    
+    <!--h2 class="title" style="text-align:center">Un Landing Page</h2-->
+	<img class="wave" src="assets/img/wave.png">
+	<!--div class="container">
+	  <h2 class="title">Un Landing Page</h2>
+	</div-->
+	<div style="text-align:center;margin-top:10px;">
+			<br>
+			<br>
+			<br>
+			<br>
+			<h3 >Un Landing Page Lead</h3>
+			<br>
+			<br>
+	</div>
+	<div class="container">
+	    <div class="col-md-6">
+			<div class="img">
+				<p>
+					<strong>Landing Page Leads</strong><br> 
+					Esta es una landing page leads impleentado con NodeJS y Angular13s sobre una suscripcion de personas sobre un tema en particular
+				</p>
+				<img src="assets/img/bg.svg">
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="login-content" style="margin-left:10px;">
+				<form  [formGroup]="leadForm" (ngSubmit)="agregarLead()">
+					<img src="assets/img/avatar.svg">
+					<h2 class="title">Suscribete</h2>
+					<div class="input-div one">
+					   <div class="i">
+							<i class="fas fa-user"></i>
+					   </div>
+					   <div class="div">
+							
+                            <input type="text" formControlName="lead"
+                            class="form-control" placeholder="Nombre" >
+                            
+                            
+					   </div>
+					</div>
+					<div class="input-div pass">
+					   <div class="i"> 
+							<i class="fas fa-envelope"></i>
+					   </div>
+					   <div class="div">
+							
+							<input type="text" formControlName="email"
+                            class="form-control" placeholder="Email" >
+					   </div>
+					</div>
+					<div class="input-div pass">
+					   <div class="i"> 
+							<i class="fas fa-phone"></i>
+					   </div>
+					   <div class="div">
+							
+							<input type="text" formControlName="telefono"
+                            class="form-control" placeholder="Telefono" >
+					   </div>
+					</div>
+					<div class="input-div pass">
+					   <div class="i"> 
+							<i class="fas fa-address-card"></i>
+					   </div>
+					   <div class="div">
+							
+							<input type="text" formControlName="direccion"
+                            class="form-control" placeholder="Direccion" >
+					   </div>
+                       
+					</div>
+				
+                    <button id="miBoton"  type="submit" [disabled]="leadForm.invalid"  class="btn btn-info btn-lg float-end">Solicitar</button>
+				</form>
+			</div>
+		</div>
+    </div>
+   
+
+
+
+</div>
